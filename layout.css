@@ -1,0 +1,251 @@
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Allgemein */
+html, body {
+    height:100%;
+}
+
+body {
+    font-family: arial, helvetica;
+    color: grey;
+}
+h1 {
+    font-size: 6em;
+}
+h2 {
+    font-size: 4em;
+}
+.highlight {
+    background: deepskyblue;
+    color: #fff;
+}
+.subline{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+.circle{
+    border-radius:50%;
+}
+.content {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width:90%;
+}
+img {
+    margin-right:0.5em;
+    margin-top:0.5em;
+    opacity:0.4;
+}
+img:hover {
+    opacity:1.0;
+}
+.icon {
+    max-height: 64px;
+}
+.section {
+    height:100%;
+    position:relative;
+    padding:10px;
+}
+
+.fp-tooltip {
+    color: black !important;
+}
+
+/*Start*/
+
+#start {
+    background-color: whitesmoke;
+    border-top: 8px solid deepskyblue;
+}
+.arrow::after{
+    content: '';
+    position: absolute;
+    left: 49%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid whitesmoke;
+    clear: both;
+}
+#start h1 {
+    color: #444;
+}
+#start p {
+    color: #333;
+    opacity: 0.4;
+}
+/*About*/
+#about {
+    background-color: dimgray;
+}
+#about h2 {
+    color: whitesmoke;
+}
+#about p {
+    color: whitesmoke;
+    opacity: 0.4;
+}
+#about img {
+    opacity: 1.0;
+}
+/* Skills */
+#skills {
+    background-color:white;
+}
+#skills h2 {
+    color: deepskyblue;
+}
+/* Folio */
+#folio {
+    background-color: dimgray;
+}
+#folio h2 {
+    color: whitesmoke;
+}
+#folio p {
+    color: whitesmoke;
+    opacity: 0.4;
+}
+/* Contact */
+#contact {
+    background-color:deepskyblue;
+}
+#contact h2 {
+    color:whitesmoke;
+}
+#contact h3 {
+    color: whitesmoke;
+    opacity: 0.5;
+}
+#contact img {
+    opacity: 0.6;
+}
+#contact .subline {
+    color: whitesmoke;
+    opacity: 0.6;
+}
+#contact img:hover {
+    opacity: 1.0;
+}
+hr {
+    color: whitesmoke;
+    background-color: whitesmoke;
+    height: 1px;
+    border: 0;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+hr:after {
+    content: "*";
+    display: inline-block;
+    position: relative;
+    top: -0.3em;
+    font-size: 2em;
+    padding: 0 0.25em;
+    background: deepskyblue;
+}
+/* Footer 
+#footer {
+    background: whitesmoke;
+    opacity: 0.9;
+    height: 25%!important;
+    border-bottom: 8px solid deepskyblue;
+}
+#footer h3 {
+    color: dimgray;
+    opacity: 0.5;
+}
+hr {
+    color: dimgray;
+    background-color: dimgray;
+    height: 1px;
+    border: 0;
+    margin: 3em;
+}
+hr:after {
+    content: "*";
+    display: inline-block;
+    position: relative;
+    top: -0.3em;
+    font-size: 2em;
+    padding: 0 0.25em;
+    background: whitesmoke;
+}*/
+/* Media Queries */
+
+@media screen and (max-width:900px) {
+    img {
+        max-width:300px;
+    }
+}
+@media screen and (max-width:700px) {
+    img {
+        max-width:250px;
+    }
+    .content {
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+       font-size: 5em; 
+    }
+    h2 {
+        font-size: 3em;
+    }
+    .subline {
+        font-size: 1.5em;
+    }
+    .icon {
+        height: 50px;
+    }
+}
