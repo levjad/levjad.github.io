@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 63.83 63.83"
+   version="1.1"
+   id="svg3781"
+   sodipodi:docname="confluence.svg"
+   width="63.830002"
+   height="63.830002"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata3785">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Confluence-blue</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     id="namedview3783"
+     showgrid="false"
+     inkscape:zoom="2.3730674"
+     inkscape:cx="121.34713"
+     inkscape:cy="31.915001"
+     inkscape:window-x="1432"
+     inkscape:window-y="127"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3781" />
+  <defs
+     id="defs3751">
+    <style
+       id="style3743">.cls-1{fill:#253858;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}</style>
+    <linearGradient
+       id="linear-gradient"
+       x1="59.68"
+       y1="67.650002"
+       x2="20.35"
+       y2="45.049999"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0.18"
+         stop-color="#0052cc"
+         id="stop3745" />
+      <stop
+         offset="1"
+         stop-color="#2684ff"
+         id="stop3747" />
+    </linearGradient>
+    <linearGradient
+       id="linear-gradient-2"
+       x1="279.76001"
+       y1="-1616.34"
+       x2="240.42"
+       y2="-1638.95"
+       gradientTransform="rotate(180,141.415,-808.355)"
+       xlink:href="#linear-gradient" />
+  </defs>
+  <title
+     id="title3753">Confluence-blue</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="Blue">
+      <path
+         class="cls-2"
+         d="m 2.23,49.53 c -0.65,1.06 -1.38,2.29 -2,3.27 a 2,2 0 0 0 0.67,2.72 l 13,8 a 2,2 0 0 0 2.77,-0.68 c 0.52,-0.87 1.19,-2 1.92,-3.21 5.15,-8.5 10.33,-7.46 19.67,-3 l 12.89,6.13 a 2,2 0 0 0 2.69,-1 l 6.19,-14 a 2,2 0 0 0 -1,-2.62 C 56.31,43.86 50.9,41.31 46.03,38.96 28.51,30.45 13.62,31 2.23,49.53 Z"
+         id="path3775"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linear-gradient)" />
+      <path
+         class="cls-3"
+         d="m 60.52,17.76 c 0.65,-1.06 1.38,-2.29 2,-3.27 a 2,2 0 0 0 -0.67,-2.72 l -13,-8 A 2,2 0 0 0 46,4.43 c -0.52,0.87 -1.19,2 -1.92,3.21 -5.15,8.5 -10.33,7.46 -19.67,3 L 11.56,4.54 a 2,2 0 0 0 -2.69,1 l -6.19,14 a 2,2 0 0 0 1,2.62 c 2.72,1.28 8.13,3.83 13,6.18 17.56,8.5 32.45,7.93 43.84,-10.58 z"
+         id="path3777"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linear-gradient-2)" />
+    </g>
+  </g>
+</svg>
