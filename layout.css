@@ -115,6 +115,9 @@ footer {
 	background-color: rgba(0,0,0,0.2);
 	padding: 1rem;
 	width: 15rem;
+	flex-grow: 1;
+	margin-right: 20px;
+	margin-bottom: 10px;
 }
 
 .card:hover {
@@ -180,6 +183,10 @@ footer {
 	#mount4 {
 		border-width: 0 2rem 3rem 4rem;
 		border-color: transparent transparent rgba(255,255,255,1) transparent;
+	}
+
+	.card {
+		margin-right: 0;
 	}
 }
 
