@@ -1,7 +1,7 @@
 html,
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  margin: 0;
+  margin: 1rem;
   height: 100%;
   color: whitesmoke;
   background-color: #333;
@@ -23,7 +23,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 hr {
@@ -166,15 +166,16 @@ p {
 }
 
 .grid {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   margin-top: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   background-color: var(--content-bg);
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   width: 20rem;
   border-radius: 10px;
   overflow: hidden;
@@ -201,6 +202,28 @@ p {
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .bubble:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: var(--content-bg) transparent;
+    border-width: 0 20px 20px;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width: 930px), only screen and (max-height: 770px) {
+  .down-arrow {
+    display: none;
+  }
 }
 
 /* .highlight-animation {
