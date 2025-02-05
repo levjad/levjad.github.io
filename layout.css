@@ -1,3 +1,9 @@
+:root {
+  --primary: deepskyblue;
+  --secondary: lime;
+  --content-bg: rgba(0, 0, 0, 0.6);
+}
+
 html,
 body {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -55,22 +61,12 @@ p {
   flex-direction: column;
 }
 
-.fullscreen {
-  height: 100%;
-}
-
 .gap {
   gap: 3rem;
 }
 
 .padding {
   padding: 1rem;
-}
-
-:root {
-  --primary: deepskyblue;
-  --secondary: lime;
-  --content-bg: rgba(0, 0, 0, 0.6);
 }
 
 .bubble {
@@ -220,37 +216,14 @@ p {
   }
 }
 
-@media only screen and (max-width: 930px), only screen and (max-height: 770px) {
+@media only screen and (max-width: 930px) {
   .down-arrow {
     display: none;
   }
 }
 
-/* .highlight-animation {
-  --bg-size: 400%;
-  --color-one: deepskyblue;
-  --color-two: lime;
-  font-family: sans-serif;
-  background: linear-gradient(
-      90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)
-    )
-    0 0 / var(--bg-size) 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+@media only screen and (min-width: 500px) {
+  .fullscreen {
+    height: 100%;
+  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .highlight-animation {
-    animation: move-bg 8s linear infinite;
-  }
-  @keyframes move-bg {
-    to {
-      background-position: var(--bg-size) 0;
-    }
-  }
-} */
