@@ -161,6 +161,17 @@ p {
   filter: none;
 }
 
+.icon-white {
+  height: 2rem;
+  filter: invert(1);
+  opacity: 0.6;
+}
+
+.icon-white:hover {
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
 .grid {
   width: 100%;
   display: flex;
