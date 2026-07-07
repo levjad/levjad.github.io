@@ -1,261 +1,446 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Lev Jad | Software Engineer</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Lev Jad — Software Engineer based in Munich. Frontend specialist with a passion for UI/UX, architecture and AI, plus solid backend and API design experience." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./layout.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
+    <meta property="og:title" content="Lev Jad | Software Engineer" />
+    <meta property="og:description" content="Frontend-focused Software Engineer based in Munich — UI/UX, architecture, AI and API design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://levjad.github.io/" />
+    <meta property="og:image" content="https://levjad.github.io/assets/img/profile.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link id="theme-css" rel="stylesheet" href="./layout.css" />
+    <script>
+      if (localStorage.getItem("theme") === "brutal") {
+        document.getElementById("theme-css").href = "./layout-brutal.css";
+      }
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-    <header class="fullscreen column gap">
-      <section id="intro" class="headline gap">
-        <div class="picture-border-wrap">
-          <div class="picture"></div>
+    <div class="aurora" aria-hidden="true">
+      <div class="veil veil-1"></div>
+      <div class="veil veil-2"></div>
+      <div class="veil veil-3"></div>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <nav>
+      <button id="theme-toggle" type="button" aria-label="Switch design theme"></button>
+      <div class="nav-links">
+        <a href="#techstack">Techstack</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header id="top">
+      <div class="hero">
+        <div class="portrait-ring">
+          <img class="portrait" src="assets/img/profile.jpg" alt="Portrait of Lev Jad" />
         </div>
-        <div class="bubble column">
-          <h1>Hi, I am <strong>Lev</strong>.</h1>
-          <p>
-            A highly motivated Software Engineer with expertise in <em>frontend development</em>, based in <em>Munich</em>.
-            I possess a strong <em>passion</em> for UI/UX design, architecture and <em>AI</em>, as well as a solid understanding of
-            <em>backend development</em> and <em>API design</em>. My proven industry experience spans across adtech,
-            publishing and automotive sectors. Proficient in working within <em>agile</em> teams, I successfully <em>mentor</em>
-            junior developers and consistently <em>share</em> my knowledge with colleagues.
-          </p>
-          <section id="iconbar">
-            <a href="https://www.linkedin.com/in/leo-jadgarow/" target="_blank"><img class="icon" src="assets/icons/linkedin.svg" alt="linkedin"/></a>
-            <a href="https://www.xing.com/profile/Leo_Jadgarow/cv" target="_blank"><img class="icon" src="assets/icons/xing.svg" alt="xing"/></a>
-            <a href="https://github.com/levjad" target="_blank"><img class="icon" src="assets/icons/github.svg" alt="github"/></a>
-            <a href="https://www.deviantart.com/designjunkee" target="_blank"><img class="icon" src="assets/icons/deviantart.svg" alt="deviantart"/></a>
-          </section>
+        <div class="bubble-wrap">
+          <span class="bubble-tail" aria-hidden="true"></span>
+          <div class="bubble">
+            <h1>Hi, I&rsquo;m <span class="accent">Lev</span>.</h1>
+          </div>
+        </div>
+        <p class="subtitle">Software Engineer &middot; Munich</p>
+        <p class="tagline">
+          <em>Frontend specialist</em> with a passion for <strong>UI/UX, architecture and AI</strong> &mdash;
+          backed by solid backend and API design experience across adtech,
+          publishing and automotive. I love agile teams, <em>mentoring</em> juniors and
+          sharing what I learn.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/levjad" target="_blank" rel="noopener"><img class="btn-icon dark" src="assets/icons/github.svg" alt="" />GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/leo-jadgarow/" target="_blank" rel="noopener"><img class="btn-icon" src="assets/icons/linkedin.svg" alt="" />LinkedIn</a>
+          <a class="btn" href="https://www.xing.com/profile/Leo_Jadgarow/cv" target="_blank" rel="noopener"><img class="btn-icon" src="assets/icons/xing.svg" alt="" />Xing</a>
+          <a class="btn" href="https://www.deviantart.com/designjunkee" target="_blank" rel="noopener"><img class="btn-icon" src="assets/icons/deviantart.svg" alt="" />DeviantArt</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#techstack" aria-label="Scroll to techstack"></a>
+    </header>
+
+    <main>
+      <section id="techstack" class="reveal">
+        <h2>Techstack</h2>
+        <hr />
+        <div class="stack-cards">
+          <div class="stack-group glass-card">
+            <h3>Languages</h3>
+            <ul class="pills">
+              <li class="pill"><img src="assets/icons/typescript.svg" alt="" loading="lazy" />TypeScript</li>
+              <li class="pill"><img src="assets/icons/javascript.svg" alt="" loading="lazy" />JavaScript</li>
+              <li class="pill"><img src="assets/icons/html5_badge.svg" alt="" loading="lazy" />HTML5</li>
+              <li class="pill"><img src="assets/icons/css3_badge.svg" alt="" loading="lazy" />CSS3</li>
+              <li class="pill"><img src="assets/icons/php-1.svg" alt="" loading="lazy" />PHP</li>
+            </ul>
+          </div>
+          <div class="stack-group glass-card">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul class="pills">
+              <li class="pill"><img src="assets/icons/angular.svg" alt="" loading="lazy" />Angular</li>
+              <li class="pill"><img src="assets/icons/react.svg" alt="" loading="lazy" />React</li>
+              <li class="pill"><img class="invert" src="assets/icons/stencil.svg" alt="" loading="lazy" />StencilJS</li>
+              <li class="pill"><img src="assets/icons/nestjs.svg" alt="" loading="lazy" />NestJS</li>
+              <li class="pill"><img src="assets/icons/tailwind-css.svg" alt="" loading="lazy" />Tailwind CSS</li>
+              <li class="pill"><img src="assets/icons/daisyui.svg" alt="" loading="lazy" />daisyUI</li>
+              <li class="pill"><img src="assets/icons/bootstrap.svg" alt="" loading="lazy" />Bootstrap</li>
+              <li class="pill"><img src="assets/icons/wordpress-blue.svg" alt="" loading="lazy" />WordPress</li>
+            </ul>
+          </div>
+          <div class="stack-group glass-card">
+            <h3>Tools &amp; Platforms</h3>
+            <ul class="pills">
+              <li class="pill"><img src="assets/icons/node.svg" alt="" loading="lazy" />Node.js</li>
+              <li class="pill"><img src="assets/icons/npm.svg" alt="" loading="lazy" />npm</li>
+              <li class="pill"><img src="assets/icons/git-icon.svg" alt="" loading="lazy" />Git</li>
+              <li class="pill"><img src="assets/icons/firebase.svg" alt="" loading="lazy" />Firebase</li>
+              <li class="pill"><img src="assets/icons/jira.svg" alt="" loading="lazy" />Jira</li>
+              <li class="pill"><img src="assets/icons/confluence.svg" alt="" loading="lazy" />Confluence</li>
+              <li class="pill"><img src="assets/icons/webstorm.svg" alt="" loading="lazy" />WebStorm</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <div class="down-arrow"></div>
-    </header>
+      <section id="work" class="reveal">
+        <h2>Work</h2>
+        <hr />
+        <div class="bento">
+          <article class="card featured">
+            <a href="https://jad-russian-proverbs.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-russian-proverb-ui.png" loading="lazy" alt="Screenshot of the Russian Proverbs app" />
+            </a>
+            <div class="card-body">
+              <h3>Russian Proverbs</h3>
+              <p>Browse Russian proverbs with translations &mdash; a playful React UI on top of my own proverb API.</p>
+              <ul class="pills small">
+                <li class="pill">React</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Tailwind</li>
+                <li class="pill">daisyUI</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://jad-russian-proverbs.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
 
-    <section id="techstack" class="column">
-      <h2>Techstack</h2>
-      <hr />
-      <div class="grid gap">
-        <div class="card padding">
-          <h3>Languages</h3>
-          <span class="gallery">                
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-            <img class="icon" src="assets/icons/javascript.svg" alt="JavaScript" title="JavaScript" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/php-1.svg" alt="php" title="php" loading="lazy">
-          </span>
-        </div>
-        <div class="card padding">
-          <h3>Frameworks & CMS</h3>
-          <span class="gallery">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/nestjs.svg" alt="NestJS" title="NestJS" loading="lazy">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon-white" src="assets/icons/nextjs.svg" alt="NextJS" title="NextJS" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/materialize.svg" alt="MaterializeCSS" title="MaterializeCSS" loading="lazy">
-            <img class="icon" src="assets/icons/bootstrap.svg" alt="Bootstrap" title="Bootstrap" loading="lazy">
-            <img class="icon" src="assets/icons/wordpress-blue.svg" alt="Wordpress" title="Wordpress" loading="lazy">
-          </span><br><br>
-        </div>
-        <div class="card padding">
-          <h3>Tools & Platforms</h3>
-          <span class="gallery">
-            <img class="icon" src="assets/icons/vscode.png" alt="Visual Studio Code" title="Visual Studio Code" loading="lazy">
-            <img class="icon" src="assets/icons/webstorm.svg" alt="Webstorm" title="Webstorm" loading="lazy">
-            <img class="icon" src="assets/icons/intellij.svg" alt="IntelliJ" title="IntelliJ" loading="lazy">
-            <img class="icon" src="assets/icons/photoshop-cc.svg"  alt="Adobe Photoshop" title="Adobe Photoshop" loading="lazy">
-            <img class="icon" src="assets/icons/node.svg" alt="Node JS" title="Node JS" loading="lazy">
-            <img class="icon" src="assets/icons/npm.svg" alt="npm" title="npm" loading="lazy">
-            <img class="icon" src="assets/icons/git-icon.svg" alt="git" title="git" loading="lazy">
-            <img class="icon" src="assets/icons/dfp.svg" alt="DFP" title="DFP" loading="lazy">
-            <img class="icon" src="assets/icons/jira.svg" alt="Jira" title="Jira" loading="lazy">
-            <img class="icon" src="assets/icons/confluence.svg" alt="Confluence" title="Confluence" loading="lazy">
-            <img class="icon" src="assets/icons/bitbucket.svg" alt="bitbucket" title="bitbucket" loading="lazy">
-            <img class="icon" src="assets/icons/sourcetree.png" alt="Sourcetree" title="Sourcetree" loading="lazy">
-            <img class="icon" src="assets/icons/firebase.svg" alt="Firebase" title="Firebase" loading="lazy">
-          </span>
-        </div>
-      </div>
-    </section>
+          <article class="card featured">
+            <a href="https://jad-dictionary.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-dictionary.png" loading="lazy" alt="Screenshot of the Dictionary app" />
+            </a>
+            <div class="card-body">
+              <h3>Dictionary</h3>
+              <p>Look up any English word &mdash; definitions, phonetics and audio, powered by a free dictionary API.</p>
+              <ul class="pills small">
+                <li class="pill">React</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://jad-dictionary.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
 
-    <section id="work" class="column">
-      <h2>Work</h2>
-      <hr />
-      <div class="grid gap">
-        <div class="card">
-          <a href="https://jad-russian-proverbs.web.app/" target="_blank"><img class="screenshot" src="assets/screens/jad-russian-proverb-ui.png" loading="lazy" alt="Russian Proverb UI"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://github.com/levjad/jad-nextjs-portfolio" target="_blank"><img class="screenshot" src="assets/screens/jad-nextjs-portfolio.png" loading="lazy" alt="NextJS Portfolio"/></a>
-          <div class="legend">
-            <img class="icon-white" src="assets/icons/nextjs.svg" alt="NextJS" title="NextJS" loading="lazy">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://github.com/levjad/jad-cities" target="_blank"><img class="screenshot" src="assets/screens/jad-cities.png" loading="lazy" alt="Cities Fullstack app"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/nestjs.svg" alt="NestJS" title="NestJS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://levjad.github.io/jad-russian-proverb-api/" target="_blank"><img class="screenshot" src="assets/screens/jad-russian-proverb-api.png" loading="lazy" alt="Russian Proverb API"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/nestjs.svg" alt="NestJS" title="NestJS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://jad-dictionary.web.app/" target="_blank"><img class="screenshot" src="assets/screens/jad-dictionary.png" loading="lazy" alt="Dictionary"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://jad-passgen.web.app/" target="_blank"><img class="screenshot" src="assets/screens/jad-passgen.png" loading="lazy" alt="Password Generator"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/daisyui.svg" alt="Daisy UI" title="Daisy UI" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://jad-invoice.web.app/" target="_blank"><img class="screenshot" src="assets/screens/jad-invoice.png" loading="lazy" alt="Invoide"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://jad-four-wins.web.app/" target="_blank"><img class="screenshot" src="assets/screens/four-wins.png" loading="lazy" alt="four wins"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/react.svg" alt="React" title="React" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://ngx-ip-address-tracker.web.app/" target="_blank"><img class="screenshot" src="assets/screens/ngx_ip_address_tracker.png" loading="lazy" alt="ngx ip address tracker"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://ngx-advice-generator.web.app/" target="_blank"><img class="screenshot" src="assets/screens/ngx_advice_generator.png" loading="lazy" alt="ngx advice generator"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://ngx-tictactoe.web.app/" target="_blank"><img class="screenshot" src="assets/screens/ngx_tictactoe.png" loading="lazy" alt="ngx tic tac toe"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://github.com/levjad/nestjs-rest-api" target="_blank"><img class="screenshot" src="assets/screens/nestjs-rest-api.png" loading="lazy" alt="nestjs rest api"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/nestjs.svg" alt="NestJS" title="NestJS" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="assets/screens/portfolio_page_2021.png" target="_blank"><img class="screenshot" src="assets/screens/portfolio_page_2021_head.png" loading="lazy" alt="portfolio page 2021"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://ngx-dashboard-example.firebaseapp.com/" target="_blank"><img class="screenshot" src="assets/screens/ngx_dashboard.png" loading="lazy" alt="ngx dashboard"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://levjad.github.io/memory_game/" target="_blank"><img class="screenshot" src="assets/screens/memory_game.png" loading="lazy" alt="memory game"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/javascript.svg" alt="JavaScript" title="JavaScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://ng2-todoworx.firebaseapp.com/" target="_blank"><img class="screenshot" src="assets/screens/todo_worx.png" loading="lazy" alt="todo worx"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy">
-            <img class="icon" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://levjad.github.io/analog-clock/" target="_blank"><img class="screenshot" src="assets/screens/html_canvas_clock.png" loading="lazy" alt="html canvas clock"/></a>
-          <div class="legend">
-            <img class="icon" src="assets/icons/html5_badge.svg" alt="HTML5" title="HTML5" loading="lazy">
-            <img class="icon" src="assets/icons/css3_badge.svg" alt="CSS3" title="CSS3" loading="lazy">
-            <img class="icon" src="assets/icons/tailwind-css.svg" alt="TailwindCSS" title="TailwindCSS" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
+          <article class="card">
+            <a href="https://levjad.github.io/jad-russian-proverb-api/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-russian-proverb-api.png" loading="lazy" alt="Screenshot of the Russian Proverb API documentation" />
+            </a>
+            <div class="card-body">
+              <h3>Proverb API</h3>
+              <p>REST API serving Russian proverbs, built with NestJS &mdash; including a documentation page.</p>
+              <ul class="pills small">
+                <li class="pill">NestJS</li>
+                <li class="pill">TypeScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://levjad.github.io/jad-russian-proverb-api/" target="_blank" rel="noopener">Docs &nearr;</a>
+              </div>
+            </div>
+          </article>
 
-    <footer class="padding"><strong>&copy; by Lev Jad | 2025</strong></footer>
+          <article class="card">
+            <a href="https://jad-passgen.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-passgen.png" loading="lazy" alt="Screenshot of the Password Generator" />
+            </a>
+            <div class="card-body">
+              <h3>PassGen</h3>
+              <p>Password generator with configurable rules and a live strength indicator.</p>
+              <ul class="pills small">
+                <li class="pill">React</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">daisyUI</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://jad-passgen.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
 
-    <script src="" async defer></script>
+          <article class="card">
+            <a href="https://jad-four-wins.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/four-wins.png" loading="lazy" alt="Screenshot of the Four Wins game" />
+            </a>
+            <div class="card-body">
+              <h3>Four Wins</h3>
+              <p>Connect-four in the browser &mdash; drop your discs and let the win detection do its job.</p>
+              <ul class="pills small">
+                <li class="pill">React</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://jad-four-wins.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://ngx-tictactoe.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/ngx_tictactoe.png" loading="lazy" alt="Screenshot of the Tic Tac Toe game" />
+            </a>
+            <div class="card-body">
+              <h3>Tic Tac Toe</h3>
+              <p>The classic game with score tracking, built as a small Angular exercise.</p>
+              <ul class="pills small">
+                <li class="pill">Angular</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://ngx-tictactoe.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://ngx-advice-generator.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/ngx_advice_generator.png" loading="lazy" alt="Screenshot of the Advice Generator" />
+            </a>
+            <div class="card-body">
+              <h3>Advice Generator</h3>
+              <p>Serves a random piece of advice on every click &mdash; a Frontend Mentor challenge.</p>
+              <ul class="pills small">
+                <li class="pill">Angular</li>
+                <li class="pill">TypeScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://ngx-advice-generator.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://levjad.github.io/memory_game/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/memory_game.png" loading="lazy" alt="Screenshot of the Memory Game" />
+            </a>
+            <div class="card-body">
+              <h3>Memory Game</h3>
+              <p>Card-matching memory game written in plain vanilla JavaScript &mdash; no framework needed.</p>
+              <ul class="pills small">
+                <li class="pill">JavaScript</li>
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://levjad.github.io/memory_game/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://github.com/levjad/jad-cities" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-cities.png" loading="lazy" alt="Screenshot of the Cities full-stack app" />
+            </a>
+            <div class="card-body">
+              <h3>Cities</h3>
+              <p>Full-stack city explorer &mdash; Angular frontend talking to a NestJS REST backend.</p>
+              <ul class="pills small">
+                <li class="pill">Angular</li>
+                <li class="pill">NestJS</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/levjad/jad-cities" target="_blank" rel="noopener">Code &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://github.com/levjad/jad-nextjs-portfolio" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-nextjs-portfolio.png" loading="lazy" alt="Screenshot of the Next.js portfolio" />
+            </a>
+            <div class="card-body">
+              <h3>Next.js Portfolio</h3>
+              <p>Alternative take on this very page &mdash; server-rendered with Next.js and styled with daisyUI.</p>
+              <ul class="pills small">
+                <li class="pill">Next.js</li>
+                <li class="pill">React</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/levjad/jad-nextjs-portfolio" target="_blank" rel="noopener">Code &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://jad-invoice.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/jad-invoice.png" loading="lazy" alt="Screenshot of the Invoice app" />
+            </a>
+            <div class="card-body">
+              <h3>Invoice</h3>
+              <p>Invoice management with create, edit, filter and status tracking &mdash; a classic CRUD app done right.</p>
+              <ul class="pills small">
+                <li class="pill">React</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://jad-invoice.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://github.com/levjad/nestjs-rest-api" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/nestjs-rest-api.png" loading="lazy" alt="Screenshot of the NestJS REST API" />
+            </a>
+            <div class="card-body">
+              <h3>NestJS REST API</h3>
+              <p>Blog-style REST API with full CRUD endpoints &mdash; exploring the NestJS module system.</p>
+              <ul class="pills small">
+                <li class="pill">NestJS</li>
+                <li class="pill">TypeScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/levjad/nestjs-rest-api" target="_blank" rel="noopener">Code &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <button class="more-tile" id="show-older" type="button">+ Show 5 older projects</button>
+
+          <article class="card older" hidden>
+            <a href="https://ngx-ip-address-tracker.web.app/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/ngx_ip_address_tracker.png" loading="lazy" alt="Screenshot of the IP Address Tracker" />
+            </a>
+            <div class="card-body">
+              <h3>IP Address Tracker</h3>
+              <p>Geolocates any IP address or domain and pins it on an interactive map.</p>
+              <ul class="pills small">
+                <li class="pill">Angular</li>
+                <li class="pill">TypeScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://ngx-ip-address-tracker.web.app/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card older" hidden>
+            <a href="https://ngx-dashboard-example.firebaseapp.com/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/ngx_dashboard.png" loading="lazy" alt="Screenshot of the Angular dashboard" />
+            </a>
+            <div class="card-body">
+              <h3>Dashboard</h3>
+              <p>Admin dashboard example with charts and widgets, built with Angular.</p>
+              <ul class="pills small">
+                <li class="pill">Angular</li>
+                <li class="pill">TypeScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://ngx-dashboard-example.firebaseapp.com/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card older" hidden>
+            <a href="https://ng2-todoworx.firebaseapp.com/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/todo_worx.png" loading="lazy" alt="Screenshot of the Todo Worx app" />
+            </a>
+            <div class="card-body">
+              <h3>Todo Worx</h3>
+              <p>Todo app with Firebase persistence &mdash; one of my early Angular projects.</p>
+              <ul class="pills small">
+                <li class="pill">Angular</li>
+                <li class="pill">TypeScript</li>
+                <li class="pill">Firebase</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://ng2-todoworx.firebaseapp.com/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card older" hidden>
+            <a href="https://levjad.github.io/analog-clock/" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/html_canvas_clock.png" loading="lazy" alt="Screenshot of the analog canvas clock" />
+            </a>
+            <div class="card-body">
+              <h3>Analog Clock</h3>
+              <p>An analog clock drawn on an HTML canvas, ticking in real time.</p>
+              <ul class="pills small">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+                <li class="pill">Tailwind</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://levjad.github.io/analog-clock/" target="_blank" rel="noopener">Live &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card older" hidden>
+            <a href="assets/screens/portfolio_page_2021.png" target="_blank" rel="noopener">
+              <img class="screenshot" src="assets/screens/portfolio_page_2021_head.png" loading="lazy" alt="Screenshot of the 2021 portfolio page" />
+            </a>
+            <div class="card-body">
+              <h3>Portfolio 2021</h3>
+              <p>A previous iteration of this page, hand-crafted with nothing but HTML and CSS.</p>
+              <ul class="pills small">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+              </ul>
+              <div class="card-links">
+                <a href="assets/screens/portfolio_page_2021.png" target="_blank" rel="noopener">View &nearr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <h2>Contact</h2>
+        <hr />
+        <div class="contact-card glass-card">
+          <h3>Let&rsquo;s build something together.</h3>
+          <p>
+            Whether it&rsquo;s a role, a project or just an idea worth discussing &mdash;
+            the fastest way to reach me is LinkedIn.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/leo-jadgarow/" target="_blank" rel="noopener">Get in touch</a>
+            <a class="btn" href="https://github.com/levjad" target="_blank" rel="noopener">Follow on GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Lev Jad</p>
+      <a class="to-top" href="#top">Back to top &uarr;</a>
+    </footer>
+
   </body>
 </html>
